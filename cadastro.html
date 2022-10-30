@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleCadastro.css">
+    <script src="myscript.js"></script>
+    <link rel="script" href="myscript.js">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+
+
+</head>
+<body>
+    <script src="myscript.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
+
+<div id="conteudo">
+    <h1>Cadastro Refugiado</h1>
+    <hr id="linha" size="8" width="80%">
+
+        <div class="cadastro">
+            <label for="nome">Digite seu Nome <br></label>
+            <input id="nome" type="text">
+            <br><br>
+
+            <label for="pais">Digite seu país de origem <br></label>
+            <input id="pais"type="text">
+            <br><br>
+
+            <label for="nascimento">Coloque sua data de nascimento <br></label>
+            <input id="nascimento" type="date">
+            <br><br>
+
+            <label for="filhos">Você tem filhos?<br></label>
+            <input id="temfilho" type="checkbox" onclick="show()">
+            <p id="usar"></p>  <!-- Necessário fazer o restante, a cada vez que o usuário clicar no CHECK irá adiconar mais 1 espaço para gravar o nome dos filhos-->
+
+            <label for="sexual">Qual seu Gênero?</label><br>
+            <select id="sexual">
+                <option value="Hetero">Hétero</option>
+                <option value="Bissexual">Bissexual</option>
+                <option value="Gay">Gay</option>
+                <option value="Lésbica">Lésbica</option>
+            </select>
+              <br><br>
+
+            <label for="ensino">Digite seu nível de ensino <br></label>
+            <input id="ensino" type="text">
+            <br><br>
+
+            <label for="deficiencia">Você tem alguma deficiência?<br></label>
+            <input id="deficiencia" type="text">
+            <br><br>
+
+            <label for="origem">Qual seu local de origem? (País/Estado)<br></label>
+            <input id="origem" type="text">
+            <br><br>
+
+            <label for="email">Digite seu e-mail <br></label>
+            <input id="email" type="text" value="">
+            <br><br>
+
+            <label for="senha">Digite sua senha <br></label>
+            <input id="senha" type="text" value="">
+            <br><br>
+        
+            <button id="cadastrar" onclick="concluir()">Concluir</button>
+    </div>
+</div>
+<div id="direita"></div>
+<div id="esquerda"></div>
+
+
+</body>
+</html>
